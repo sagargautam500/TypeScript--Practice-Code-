@@ -25,7 +25,7 @@ console.log(shortText);
 //string comparision
 let str1 = "Hello";
 let str2 = "World";
-let areEqual = str1 == str2;
+let areEqual = str1 === str2;
 console.log(areEqual);
 //string template
 let product = "Phone";
