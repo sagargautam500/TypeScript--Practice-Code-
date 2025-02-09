@@ -28,12 +28,10 @@ async function fetchData() {
     let data = response.json;
     return data;
 }
-// let processData=fetchData();
-async function process() {
-    let Data = await fetchData();
-    return Data;
-}
-let processData = process();
+let processData = fetchData();
 if (typeof processData === "object") {
     console.log(processData);
 }
+// When to Use?
+// ✅ Use unknown when you don't know the exact type but want safety.
+// ❌ Avoid any, unless necessary (e.g., migrating old JavaScript code).
