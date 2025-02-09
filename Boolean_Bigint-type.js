@@ -21,8 +21,9 @@ console.log(bigNumber);
 let anotherBigNumber = BigInt(900719925474099289668); //another method to define BigInt
 console.log(anotherBigNumber);
 let summ = bigNumber + anotherBigNumber;
+console.log(summ);
 //Adding two BigInt number:
 let num1 = BigInt(123456789012345678901234567890);
 let num2 = 987654321098765432109876543210n;
 let sum = num1 + num2;
-console.log(summ); // Output: 1111111110111111111011111111100n
+console.log(sum); // Output: 1111111110111111111011111111100n
