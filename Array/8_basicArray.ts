@@ -10,6 +10,7 @@
 // (a) Using Type Annotation (type[])
 let number2: number[] = [10, 20, 30, 40];
 let names: string[] = ["Sagar", "Amit", "Rahul"];
+
 // (b) Using Generic Syntax (Array<type>)
 let number3: Array<number> = [1, 2, 3, 4];
 let names2: Array<string> = new Array("Apple", "Banana", "Mango");
@@ -20,10 +21,11 @@ let names2: Array<string> = new Array("Apple", "Banana", "Mango");
 let number4 = new Array(10, 20, 30);  // Creates an array [10, 20, 30]
 let emptyArray = new Array<number>(); // Creates an empty array []
 let sizeArray = new Array(5); // Creates an array of size 5 (empty slots)
+
 // (c) Using Array.of()
 // The Array.of() method creates an array with exact values (avoiding the single-number length issue).
-let number5 = Array.of(5); // Creates [5], not an empty array of length 5
-let fruits = Array.of("Apple", "Banana", "Mango");
+let number5:number[] = Array.of(5); // Creates [5], not an empty array of length 5
+let fruits:string[] = Array.of("Apple", "Banana", "Mango");
 console.log(number5); // Output: [5]
 console.log(fruits);  // Output: ["Apple", "Banana", "Mango"]
 
