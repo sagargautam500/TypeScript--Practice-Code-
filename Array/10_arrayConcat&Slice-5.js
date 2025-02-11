@@ -16,5 +16,5 @@ console.log(sliced); // Output: [20, 30, 40]
 let numbers9 = [10, 20, 30, 40];
 // numbers9.splice(1, 2, 25, 35); // Remove 2 elements from index 1, add 25 and 35
 // console.log(numbers9); // Output: [10, 25, 35, 40]
-numbers9.splice(1, 0, 33, 34);//from index 1 ,0 element remove ,add 33 ,34
+numbers9.splice(1, 0, 33, 34); //from index 1 ,0 element remove ,add 33 ,34
 console.log(numbers9); //Output: [10,33,34,20,30,40]

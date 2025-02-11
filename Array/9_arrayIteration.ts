@@ -16,20 +16,27 @@ numbers1.forEach((num) => {
 });
 
 // 3️⃣ Using for...of Loop (Modern and Cleaner)
-// ✅ Best for iterating directly over elements.
+// ✅ Best for iterating directly over elements.i.e it gives value direct for array and object
 console.log("using for.. of loop");
 for (let num of numbers1) {
   console.log(num);
 }
 
-// 4️⃣ Using map() Method (Returns a New Array)
+// 4️⃣ Using for...in Loop
+// ✅ It gives array index , object key   only
+console.log("using for.. in loop");
+for (let num in numbers1) {
+  console.log(num);
+}
+
+// 5️⃣4️ Using map() Method (Returns a New Array)
 // ✅ Used when you need to modify each element.
 console.log("Using map method");
 let numbers2 = [1, 2, 3];
 let squared = numbers2.map((num) => num * num);
 console.log(squared);
 
-// 5️⃣ every() – Check If All Elements Match Condition
+// 6️⃣ every() – Check If All Elements Match Condition
 // ✅ Returns true if all elements satisfy the condition.
 let numbers3 = [10, 20, 30];
 console.log(numbers3.every((num) => num > 5)); // Output: true
