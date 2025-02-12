@@ -79,3 +79,5 @@ console.log(car["model"]); // Bracket notation - Output: Corolla
 let dynamicKey = "color";
 let car2 = { brand: "Honda", [dynamicKey]: "Red" };
 console.log(car2["color"]); // Output: Red
+
+

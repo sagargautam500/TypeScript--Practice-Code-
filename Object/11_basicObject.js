@@ -6,7 +6,7 @@
 let person = {
     name: "SagarGtm",
     age: 22,
-    isDeveloper: true
+    isDeveloper: true,
 };
 console.log(person.name); // Output: SagarGtm
 // ✅ 1. Using Explicit Object Type
@@ -14,12 +14,22 @@ console.log(person.name); // Output: SagarGtm
 let person1 = {
     name: "Sagar",
     age: 22,
-    isAdmin: false
+    isAdmin: false,
 };
 console.log(person1.name); // Output: Sagar
-let person2 = { name: "Sagar", age: 22, isAdmin: false };
-let person3 = { name: "John", age: 25, isAdmin: true };
+let person2 = {
+    name: "Sagar",
+    age: 22,
+    isAdmin: false,
+};
+let person3 = {
+    name: "John",
+    age: 25,
+    isAdmin: true,
+};
 console.log(person3);
+let user3 = { name: "Alice", age: 20, isAdmin: false };
+console.log(user3);
 // (b) Using Object() Constructor..............................................................
 // ✅ You can create an empty object and add properties dynamically.
 let user1 = new Object();
