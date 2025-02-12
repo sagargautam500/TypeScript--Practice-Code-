@@ -12,7 +12,7 @@ user7.greet(); // Output: Hello, Sagar
 // ✅ Defining Methods in Type Alias
 type info5 = {
   name: string;
-  greet:()=>void;
+  greet:()=>void;  //TypeScript ensures greet must be a function.
 };
 
 let user8: info5 = {
