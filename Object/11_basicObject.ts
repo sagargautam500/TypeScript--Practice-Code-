@@ -38,16 +38,21 @@ let person3: pers = {
 };
 console.log(person3);
 
+//using function pass to object as argument .........
+const personDetail=(obj:pers)=>{
+  console.log("personName=",obj.name)
+}
+personDetail(person2);
+
 // ✅ 3. Using Interface (interface)
-// An interface is similar to type, but it is more powerful because it supports inheritance.
+// An interface is similar to typeAlias, but it is more powerful because it supports inheritance.
 interface User {
   name: string;
   age: number;
   isAdmin: boolean;
 }
 let user3: User = { name: "Alice", age: 20, isAdmin: false };
-console.log(user3)
-
+console.log(user3);
 
 // (b) Using Object() Constructor..............................................................
 // ✅ You can create an empty object and add properties dynamically.
@@ -79,5 +84,4 @@ console.log(car["model"]); // Bracket notation - Output: Corolla
 let dynamicKey = "color";
 let car2 = { brand: "Honda", [dynamicKey]: "Red" };
 console.log(car2["color"]); // Output: Red
-
 

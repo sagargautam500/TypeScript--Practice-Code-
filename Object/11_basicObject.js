@@ -28,6 +28,11 @@ let person3 = {
     isAdmin: true,
 };
 console.log(person3);
+//using function pass to object as argument .........
+const personDetail = (obj) => {
+    console.log("personName=", obj.name);
+};
+personDetail(person2);
 let user3 = { name: "Alice", age: 20, isAdmin: false };
 console.log(user3);
 // (b) Using Object() Constructor..............................................................
