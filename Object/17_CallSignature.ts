@@ -3,7 +3,8 @@
 
 // 1️⃣ Basic Call Signature
 // A call signature describes how a function can be called.
-type Add = (a: number, b: number) => number;
+// type Add ={(a: number, b: number) : number};
+type Add =(a: number, b: number) => number;
 const add2: Add = (x, y) => x + y;
 console.log(add2(5, 10)); // Output: 15
 // Here, Add is a function type with a call signature (a: number, b: number) => number.
