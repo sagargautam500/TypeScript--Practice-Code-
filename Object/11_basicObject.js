@@ -43,6 +43,8 @@ user1.age = 22;
 console.log(user1); // Output: { name: 'Sagar', age: 22 }
 //(c) Using Class:object oriented programming:
 class User {
+    name;
+    age;
     constructor(name, age) {
         this.name = name;
         this.age = age;

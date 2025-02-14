@@ -9,9 +9,7 @@
 // 2️⃣ Code Implementation
 // Generic Storage Class
 class Storage1 {
-    constructor() {
-        this.data = [];
-    }
+    data = [];
     // Add an item
     add(item) {
         this.data.push(item);

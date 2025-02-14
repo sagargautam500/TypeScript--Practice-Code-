@@ -17,6 +17,8 @@ console.log(item2); // ✅ { key: 1, value: true }
 // 3️⃣ Generic Class with Multiple Type Variables
 // A class can also have multiple type variables.
 class Pair {
+    first;
+    second;
     constructor(first, second) {
         this.first = first;
         this.second = second;

@@ -10,6 +10,7 @@ console.log(booleanBox);
 // ✔️ The class can store any type.
 // You can create classes that work with multiple types.
 class storage {
+    data;
     constructor(value) {
         this.data = value;
     }
