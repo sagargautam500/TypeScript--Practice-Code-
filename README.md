@@ -35,7 +35,49 @@ Watch mode automatically recompiles TypeScript files when changes are detected.
   tsc --watch
   ```
 
-## 4. Other Important Commands
+## 4. Configuring Root Directory and Output Directory
+- Set the root directory (`rootDir`) for TypeScript source files in `tsconfig.json`:
+  ```json
+  {
+    "compilerOptions": {
+      "rootDir": "src"
+    }
+  }
+  ```
+- Set the output directory (`outDir`) where compiled JavaScript files will be placed:
+  ```json
+  {
+    "compilerOptions": {
+      "outDir": "dist"
+    }
+  }
+  ```
+- Set the target ECMAScript version to `ES2023`:
+  ```json
+  {
+    "compilerOptions": {
+      "target": "ES2023"
+    }
+  }
+  ```
+- Exclude specific files or directories from compilation:
+  ```json
+  {
+    "exclude": ["node_modules", "dist"]
+  }
+  ```
+- Include specific files or directories for compilation:
+  ```json
+  {
+    "include": ["src/**/*.ts"]
+  }
+  ```
+- Compile the project using:
+  ```sh
+  tsc
+  ```
+
+## 5. Other Important Commands
 - **Initialize a TypeScript project:**
   ```sh
   tsc --init
