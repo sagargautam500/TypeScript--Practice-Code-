@@ -1,4 +1,4 @@
-console.log("this is first website using typescript:");
+// console.log("this is first website using typescript:");
 const btn = document.querySelector(".clickMe");
 // const body=document.body as HTMLElement;
 const bodyEle = document.body;
