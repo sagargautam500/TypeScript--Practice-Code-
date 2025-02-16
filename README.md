@@ -60,6 +60,14 @@ Watch mode automatically recompiles TypeScript files when changes are detected.
     }
   }
   ```
+- Prevent TypeScript from emitting error JavaScript files:
+  ```json
+  {
+    "compilerOptions": {
+      "noEmitOnError": true
+    }
+  }
+  ```
 - Exclude specific files or directories from compilation:
   ```json
   {
@@ -77,7 +85,38 @@ Watch mode automatically recompiles TypeScript files when changes are detected.
   tsc
   ```
 
-## 5. Other Important Commands
+## 5. Using Parcel with TypeScript
+Parcel is a fast, zero-config bundler that works well with TypeScript projects.
+
+### Installing Parcel
+To use Parcel, install it as a development dependency:
+```sh
+npm install --save-dev parcel
+```
+
+### Setting Up Parcel
+Ensure you have a `package.json` file in your project:
+```sh
+npm init -y
+```
+This file is necessary for Parcel to manage dependencies and scripts.
+
+### Running TypeScript with Parcel
+- Create an `index.html` file and include the entry TypeScript file.
+- Start the Parcel development server:
+  ```sh
+  npx parcel src/index.html
+  ```
+
+### Building the Project
+To build the project for production:
+```sh
+npx parcel build src/index.html
+```
+
+Parcel automatically transpiles TypeScript, so you don't need to run `tsc` separately.
+
+## 6. Other Important Commands
 - **Initialize a TypeScript project:**
   ```sh
   tsc --init
