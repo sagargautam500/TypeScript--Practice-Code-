@@ -2,3 +2,10 @@ h1{
   text-align: center;
   background-color: aquamarine;
 }
+.clickMe{
+  margin: 4rem;
+  padding: 2rem;
+  font-size: 3rem;
+  background-color: rgb(106, 109, 106);
+  border-radius: 10px;
+}
