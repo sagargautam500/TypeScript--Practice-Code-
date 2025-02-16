@@ -1,0 +1,1 @@
+{"mappings":"AAAA,QAAQ,GAAG,CAAC","sources":["src/index.ts"],"sourcesContent":["console.log(\"this is first website using typescript:\");"],"names":[],"version":3,"file":"index.377278e2.js.map","sourceRoot":"/__parcel_source_root/"}

@@ -1,0 +1,45 @@
+Should I use Functions component or Classes in TypeScript for MERN & Front-End Projects 🤔
+ChatGPT said:
+For MERN and Front-End Projects in TypeScript, you should use Function Components instead of Class Components.
+
+✅ Why Choose Function Components in TypeScript?
+1️⃣ More Modern & Recommended – Function components are the standard in modern React.
+2️⃣ Better Performance – No overhead of class instances, leading to better optimization.
+3️⃣ Easier to Read & Maintain – Cleaner syntax with hooks (useState, useEffect).
+4️⃣ Better TypeScript Support – Easier to type props, state, and hooks.
+5️⃣ Simpler State Management – Hooks replace lifecycle methods (componentDidMount, componentDidUpdate).
+
+🚀 Example: Function Component with TypeScript
+tsx
+Copy
+Edit
+import { useState } from "react";
+
+// Define props type
+type Props = {
+  name: string;
+};
+
+const Greeting: React.FC<Props> = ({ name }) => {
+  const [count, setCount] = useState<number>(0);
+
+  return (
+    <div>
+      <h1>Hello, {name}!</h1>
+      <p>Clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click Me</button>
+    </div>
+  );
+};
+
+export default Greeting;
+✔️ Uses TypeScript with Hooks (useState)
+✔️ Props are strongly typed (Props interface)
+✔️ No need for a class, making it more readable
+
+⚠️ When to Use Class Components?
+If you're working on an old React project that still uses class components.
+If you need Error Boundaries (currently, only class components support them).
+💡 Final Answer:
+🔥 Use Function Components with Hooks in TypeScript for MERN & Front-End Projects.
+💯 More modern, readable, and optimized than Class Components.
