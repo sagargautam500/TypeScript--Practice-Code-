@@ -1,0 +1,16 @@
+# Ignore dependencies
+node_modules/
+
+# Parcel build cache
+.parcel-cache/
+
+# Ignore build output
+dist/
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+
+# Ignore environment files
+.env
+*.log
